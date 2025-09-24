@@ -83,7 +83,6 @@ dist
 
 # Gatsby files
 .cache/
-public
 
 # Storybook build outputs
 .out
@@ -235,9 +234,6 @@ vite.config.ts.timestamp-*
 # Husky
 .husky/_/
 
-# Public files that might be generated
-public/static/
-public/uploads/
 
 # Testing
 /coverage
