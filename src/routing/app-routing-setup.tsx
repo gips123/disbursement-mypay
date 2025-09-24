@@ -26,6 +26,14 @@ import {
   MerchantReviewPage
 } from '@/pages/merchant-management/pages';
 
+// Import step-based merchant creation pages
+import { BusinessInfoPage } from '@/pages/merchant-management/pages/merchant/create/business-info';
+import { PicInfoPage } from '@/pages/merchant-management/pages/merchant/create/pic-info';
+import { DocumentsPage } from '@/pages/merchant-management/pages/merchant/create/documents';
+import { ServicesPage } from '@/pages/merchant-management/pages/merchant/create/services';
+import { HierarchyPage } from '@/pages/merchant-management/pages/merchant/create/hierarchy';
+import { OthersPage } from '@/pages/merchant-management/pages/merchant/create/others';
+
 import AccountServiceListPage from '@/pages/account-service/account-list';
 import PermissionsManagementPage from '@/pages/account-service/permissions';
 import AccountServiceRolesManagementPage from '@/pages/account-service/roles-management';
@@ -62,6 +70,15 @@ export function AppRoutingSetup() {
           {/* Merchant Management */}
           <Route path="/merchant-management/merchant-list" element={<MerchantListPage />} />
           <Route path="/merchant-management/merchant-create" element={<MerchantCreatePage />} />
+          
+          {/* Merchant Creation Steps */}
+          <Route path="/merchant-management/merchant/create/business-info" element={<BusinessInfoPage />} />
+          <Route path="/merchant-management/merchant/create/pic-info" element={<PicInfoPage />} />
+          <Route path="/merchant-management/merchant/create/documents" element={<DocumentsPage />} />
+          <Route path="/merchant-management/merchant/create/services" element={<ServicesPage />} />
+          <Route path="/merchant-management/merchant/create/hierarchy" element={<HierarchyPage />} />
+          <Route path="/merchant-management/merchant/create/others" element={<OthersPage />} />
+          
           <Route path="/merchant-management/merchant-edit/:id" element={<MerchantEditPage />} />
           <Route path="/merchant-management/merchant-detail/:id" element={<MerchantDetailPage />} />
           <Route path="/merchant-management/merchant-review" element={<MerchantReviewListPage />} />

@@ -4,7 +4,7 @@ import {
   User,
   FileText,
   Settings,
-  Shield,
+  Network,
   FileCheck,
   LucideIcon,
 } from 'lucide-react';
@@ -27,8 +27,8 @@ export function MerchantSteps({ currentStep }: MerchantStepsProps) {
     { title: 'PIC Info', icon: User },
     { title: 'Documents', icon: FileText },
     { title: 'Services', icon: Settings },
-    { title: 'Privacy', icon: Shield },
-    { title: 'Notes', icon: FileCheck },
+    { title: 'Hierarchy', icon: Network },
+    { title: 'Others', icon: FileCheck },
   ];
 
   return (
