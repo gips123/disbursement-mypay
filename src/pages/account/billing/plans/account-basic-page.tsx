@@ -3,7 +3,7 @@ import {
   Toolbar,
   ToolbarActions,
   ToolbarHeading,
-} from '@/layouts/demo1/components/toolbar';
+} from '@/layouts/components/toolbar';
 import { PageNavbar } from '@/pages/account';
 import { useSettings } from '@/providers/settings-provider';
 import { Button } from '@/components/ui/button';

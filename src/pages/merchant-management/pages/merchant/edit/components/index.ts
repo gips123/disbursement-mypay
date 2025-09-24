@@ -1,0 +1,1 @@
+export { EditMerchantForm } from './EditMerchantForm';
